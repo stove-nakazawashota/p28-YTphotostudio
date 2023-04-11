@@ -189,7 +189,7 @@ svg {
 body {
     color: #FFF;
     line-height: 1.8;
-    background: #0F0F0F;
+    background: #000;
     font-family: var(--font-JP);
     font-family: var(--font-EN);
 }
@@ -199,4 +199,129 @@ body {
     max-width: var(--width-content);
     width: 90%;
     margin: 0 auto;
+}
+
+/* デザイン */
+.sec-title {
+    font-size: 48px;
+    letter-spacing: 0.2; 
+    line-height: 1;
+    margin-top: 104px;
+    text-align: center;
+}
+
+.sec-catch {
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.8;
+    margin-bottom: 56px;
+    text-align: center;
+}
+
+.i-button {
+    background: var(--color-bg-black);
+    padding: 10px;
+    display: block;
+    width: 450px;
+    border: 1px solid var(--color-border-white);
+    font-size: 32px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.i-button::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -1em;
+    transform: translateY(-50%);
+    width: 70px;
+    height: 2px;
+    background-color: var(--color-border-white);
+    transition: 0.3s;
+}
+
+/* ヘッダー */
+.header .top-logo {
+    padding: 30px 0;
+}
+
+.header .top-logo-img {
+    width: 300px;
+    margin: 0 auto;
+    display: block;
+}
+
+/* top-kv */
+.top-kv {
+    position: relative;
+}
+
+.top-kv-img {
+    background-image: url(../img/bg-top-kv@2x.jpg);
+    padding: 400px;
+    background-position: center center;
+    background-size: cover;
+}
+
+.top-kv-text {
+    position: absolute;
+}
+
+/* Profile */
+.profile-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-text-wrapper {
+    background-color: var(--color-bg-base-light);
+    height: 321px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 35px;
+}
+
+@media screen and (min-width: 764px) {
+    .profile-img {
+        width: 45%;
+    }
+}
+
+/* Products */
+.products {
+    background-color: var(--color-bg-base-light);
+    margin: 5px calc(50% - 50vw) 15px;
+    width: 100vw;
+}
+
+.sec-title--adjust {
+    padding-top: 10px;
+}
+
+.products-flex-items {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.products-flex-item {
+    display: flex;
+    align-items: center;
+}
+
+.products-text {
+    padding: 40px;
+}
+
+.products-award-title {
+    font-size: 24px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid var(--color-border-white);
+    width: 10em;
+}
+
+.products-img {
+    width: 40%;
 }
