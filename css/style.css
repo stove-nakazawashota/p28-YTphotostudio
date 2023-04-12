@@ -119,7 +119,7 @@ sub {
     vertical-align: text-bottom;
 }
 
-input,
+/* input,
 textarea,
 select,
 button {
@@ -134,7 +134,7 @@ button {
     -webkit-appearance: none;
     appearance: none;
     background-color: inherit;
-}
+} */
 
 input,
 textarea,
@@ -227,6 +227,8 @@ body {
     font-size: 32px;
     position: relative;
     margin: 0 auto;
+    color: var(--color-font-base);
+    font-family: var(--font-JP);
 }
 
 .i-button::after {
@@ -252,6 +254,11 @@ body {
     display: block;
 }
 
+.top-logo-link {
+    width: 100px;
+    margin: 0 auto;
+}
+
 /* top-kv */
 .top-kv {
     position: relative;
@@ -259,7 +266,8 @@ body {
 
 .top-kv-img {
     background-image: url(../img/bg-top-kv@2x.jpg);
-    padding: 400px;
+    height: 650px;
+    width: 100%;
     background-position: center center;
     background-size: cover;
 }
@@ -324,4 +332,86 @@ body {
 
 .products-img {
     width: 40%;
+}
+
+/* works */
+.works-flex-items {
+    margin-top: 10px;
+    display: flex;
+    gap: 20px;
+}
+
+/* Awards */
+.awards-flex-items {
+    display: flex;
+    gap: 30px;
+}
+
+.awards-text {
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Photo School */
+.lesson-text {
+    width: 25%;
+}
+
+.lesson-data {
+    width: 50%;
+}
+
+.lesson-flex {
+    display: flex;
+}
+
+/* Contact */
+.contact {
+    background-color: var(--color-bg-base-light);
+    margin: 5px calc(50% - 50vw) 15px;
+    width: 100vw;
+    padding: 50px;
+}
+
+.contact-form-item {
+    margin: 10px 0;
+}
+
+.contact-form-label {
+    margin: 0 auto;
+    display: block;
+}
+
+.contact-form-input {
+    width: 60%;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.contact-textarea {
+    padding: 50px;
+}
+
+.red {
+    color: var(--color-font-attention);
+    margin-left: 10px;
+}
+
+.submit-button {
+    margin: 0 auto;
+    margin-top: 10px;
+    display: block;
+    padding: 10px;
+    width: 260px;
+}
+
+/* footer */
+.footer-img {
+    width: 25%;
+    margin: 0 auto;
+    display: block;
+    padding: 50px 100px;
 }

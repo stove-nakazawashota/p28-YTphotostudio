@@ -33,16 +33,18 @@
 <body>
     <header class="header">
         <div class="top-logo">
-            <img class="top-logo-img" src="img/logo.svg">
+            <a class="top-logo-link" href="#"><img class="top-logo-img" src="img/logo.svg"></a>
         </div>
     </header>
 
     <div class="top-kv">
-        <div class="top-kv-img"></div>
-        <div class="top-kv-text">
-            <h2 class="top-kv-catch">photographer</h2>
-            <h1 class="top-kv-title">YAMADA TARO</h1>
-            <p class="top-kv-text">photographer</p>
+        <div class="top-kv-img">
+
+            <div class="top-kv-text">
+                <h2 class="top-kv-catch">photographer</h2>
+                <h1 class="top-kv-title">YAMADA TARO</h1>
+                <p class="top-kv-text">photographer</p>
+            </div>
         </div>
     </div>
 
@@ -138,13 +140,11 @@
                     <img class="awards-flex-img" src="img/pic-top-award@2x.jpg">
                     <p class="awards-text">第20回 Photo Award</p>
                 </div>
-            </div>
-
-            <div class="awards-flex-items">
                 <div class="award-flex-item">
                     <img class="awards-flex-img" src="img/pic-top-award02@2x.jpg">
                     <p class="awards-text">第12回 Photo Award</p>
                 </div>
+            </div>
         </div>
 
         <div class="photo-school">
@@ -185,16 +185,16 @@
 
             <form class="contact-form">
                 <div class="contact-form-item">
-                    <label class="contact-form-label" for="name">お名前</label> 
+                    <label class="contact-form-label" for="name">お名前<span class="red">必須</span></label> 
                     <input class="contact-form-input" type="text" id="name" name="name">
                 </div>
                 <div class="contact-form-item">
-                    <label class="contact-form-label" for="email">メールアドレス</label>
+                    <label class="contact-form-label" for="email">メールアドレス<span class="red">必須</span></label>
                     <input class="contact-form-input" type="text" id="email" name="email">
                 </div>
                 <div class="contact-form-item">
-                    <label class="contact-form-label" for="message">お問い合わせ内容</label>
-                    <input class="contact-form-input" type="textarea" id="message" name="message">
+                    <label class="contact-form-label" for="message">お問い合わせ内容<span class="red">必須</span></label>
+                    <input class="contact-form-input contact-textarea" type="textarea" id="message" name="message">
                 </div>
             </form>
             <button class="submit-button">送信する</button>
