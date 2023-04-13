@@ -240,7 +240,6 @@ body {
     width: 70px;
     height: 2px;
     background-color: var(--color-border-white);
-    transition: 0.3s;
 }
 
 /* ヘッダー */
@@ -273,7 +272,25 @@ body {
 }
 
 .top-kv-text {
-    position: absolute;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    padding-top: 400px;
+}
+
+.top-kv-catch {
+    font-size: 32px;
+    letter-spacing: 2px;
+}
+
+.top-kv-title {
+    font-size: 72px;
+    letter-spacing: 4px;
+}
+
+.top-kv-p-text {
+    font-size: 24px;
 }
 
 /* Profile */
@@ -310,7 +327,7 @@ body {
 }
 
 .products-flex-items {
-    width: 80%;
+    width: 62%;
     margin: 0 auto;
 }
 
@@ -352,17 +369,76 @@ body {
     margin-top: 10px;
 }
 
+.instagram-text {
+    font-size: 24px;
+    text-align: center;
+    margin: 20px;
+}
+
 /* Photo School */
-.lesson-text {
-    width: 25%;
+.top-school-table-row {
+    border-bottom: 1px solid var(--color-border-white);
+    display: block;
+    padding: 24px 0;
 }
 
-.lesson-data {
-    width: 50%;
+@media screen and (min-width: 768px) {
+.top-school-table-row   {
+        padding: 32px 0;
+        display: flex;
+    }
 }
 
-.lesson-flex {
-    display: flex;
+.top-school-table-header,
+.top-school-table-data {
+    display: block;
+}
+
+@media screen and (min-width: 768px) {
+.top-school-table-header {
+        width: 30%;
+    }
+}
+.top-school-table-data {
+    margin-top: 4px;
+}
+@media screen and (min-width: 768px) {
+.top-school-table-data {
+    width: 70%;
+    margin-top: 0;
+}
+}
+
+.top-school-table-recommend-list {
+    list-style: inside;
+}
+
+.top-school-table-recommend-item:not(:first-child) {
+    margin-top: 4px;
+}
+
+.top-school-message {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 40px;
+}
+@media screen and (min-width: 768px) {
+.top-school-message {
+    font-size: 24px;
+    margin-top: 56px;
+}
+}
+.top-school-message span {
+display: block;
+}
+@media screen and (min-width: 768px) {
+.top-school-message span {
+    display: inline;
+}
+}
+
+.top-school-button {
+margin-top: 24px;
 }
 
 /* Contact */
@@ -371,10 +447,6 @@ body {
     margin: 5px calc(50% - 50vw) 15px;
     width: 100vw;
     padding: 50px;
-}
-
-.contact-form-item {
-    margin: 10px 0;
 }
 
 .contact-form-label {
@@ -388,11 +460,10 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 0 auto;
 }
 
 .contact-textarea {
-    padding: 50px;
+    padding: 50px;  
 }
 
 .red {
@@ -402,10 +473,11 @@ body {
 
 .submit-button {
     margin: 0 auto;
-    margin-top: 10px;
     display: block;
+    margin-top: 10px;
     padding: 10px;
     width: 260px;
+    background-color: var(--color-bg-white);
 }
 
 /* footer */
@@ -413,5 +485,10 @@ body {
     width: 25%;
     margin: 0 auto;
     display: block;
-    padding: 50px 100px;
+    padding: 0px 100px;
+}
+
+.copyright {
+    font-size: 12px;
+    text-align: center;
 }
