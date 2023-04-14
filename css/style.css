@@ -204,7 +204,6 @@ body {
 /* デザイン */
 .sec-title {
     font-size: 48px;
-    letter-spacing: 0.2; 
     line-height: 1;
     margin-top: 104px;
     text-align: center;
@@ -221,14 +220,21 @@ body {
 .i-button {
     background: var(--color-bg-black);
     padding: 10px;
+    width: 290px;
     display: block;
-    width: 390px;
     border: 1px solid var(--color-border-white);
-    font-size: 32px;
+    font-size: 24px;
     position: relative;
     margin: 0 auto;
     color: var(--color-font-base);
     font-family: var(--font-JP);
+}
+
+@media screen and (min-width: 764px) {
+    .i-button {
+        font-size: 32px;
+        width: 390px;
+    }
 }
 
 .i-button::after {
@@ -237,7 +243,7 @@ body {
     top: 50%;
     right: -1em;
     transform: translateY(-50%);
-    width: 70px;
+    width: 35px;
     height: 2px;
     background-color: var(--color-border-white);
 }
@@ -248,9 +254,17 @@ body {
 }
 
 .header .top-logo-img {
-    width: 300px;
+    width: 60%;
     margin: 0 auto;
     display: block;
+}
+
+@media screen and (min-width: 764px) {
+    .header .top-logo-img {
+        width: 300px;
+        margin: 0 auto;
+        display: block;
+    }
 }
 
 .top-logo-link {
@@ -276,23 +290,43 @@ body {
     flex-direction: column;
     text-align: center;
     position: relative;
-    padding-top: 400px;
+    padding: 500px 0;
+}
+
+@media screen and (min-width: 764px) {
+    .top-kv-text {
+        padding-top: 400px;
+    }
 }
 
 .top-kv-catch {
-    font-size: 32px;
-    letter-spacing: 2px;
-}
-
-.top-kv-title {
-    font-size: 72px;
-    letter-spacing: 4px;
-}
-
-.top-kv-p-text {
     font-size: 24px;
 }
 
+.top-kv-title {
+    font-size: 26px;
+}
+
+.top-kv-p-text {
+    font-size: 14px;
+}
+
+@media screen and (min-width: 764px) {
+    .top-kv-catch {
+        font-size: 32px;
+        letter-spacing: 2px;
+    }
+    
+    .top-kv-title {
+        font-size: 72px;
+        letter-spacing: 4px;
+    }
+    
+    .top-kv-p-text {
+        font-size: 24px;
+    }
+}
+    
 /* Profile */
 @media screen and (min-width: 764px) {
     .profile-flex {
@@ -329,9 +363,15 @@ body {
 }
 
 .products-flex-items {
-    width: 62%;
-    margin: 0 auto;
-    padding: 20px;
+    padding: 0;
+}
+
+@media screen and (min-width: 764px) {
+    .products-flex-items {
+        width: 62%;
+        margin: 0 auto;
+        padding: 20px;
+    }
 }
 
 .products-flex-item {
@@ -376,6 +416,13 @@ body {
 }
 
 /* works */
+.works-flex-items {
+    display: flex;
+    justify-content: center;
+    overflow-x: hidden;
+    padding: 5px;
+    gap: 10px;
+}
 @media screen and (min-width: 764px) {
     .works-flex-items {
         margin-top: 10px;
@@ -388,7 +435,19 @@ body {
 /* Awards */
 .awards-flex-items {
     display: flex;
-    gap: 30px;
+    flex-direction:column;
+}
+
+@media screen and (min-width: 764px) {
+    .awards-flex-items {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+    }
+}
+
+.awards-flex-item {
+    margin: 10px 0;
 }
 
 .awards-text {
@@ -403,6 +462,13 @@ body {
 }
 
 /* Photo School */
+.sec-title-p {
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    padding-top: 104px;
+}
+
 .top-school-table-row {
     border-bottom: 1px solid var(--color-border-white);
     display: block;
@@ -480,21 +546,27 @@ margin-top: 24px;
     padding: 50px;
 }
 
-.contact-form-label {
-    margin: 0 auto;
-    display: block;
+.contact-form {
+    margin: auto;
+    width: fit-content;
+}
+
+.contact-form-item {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 0;
 }
 
 .contact-form-input {
-    width: 60%;
+    width: 100%;
     padding: 20px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
 }
 
-.contact-textarea {
-    padding: 50px;  
+@media screen and (min-width: 764px) {
+    .contact-form-input {
+        padding: 20px;
+        width: 760px;
+    }
 }
 
 .red {
@@ -509,6 +581,7 @@ margin-top: 24px;
     padding: 10px;
     width: 260px;
     background-color: var(--color-bg-white);
+    border: 1px solid var(--color-border-white);
 }
 
 /* footer */
@@ -516,7 +589,18 @@ margin-top: 24px;
     width: 25%;
     margin: 0 auto;
     display: block;
-    padding: 0px 100px;
+}
+
+.footer-img {
+    width: 50%;
+    padding: 20px 0;
+}
+
+@media screen and (min-width: 764px) {
+    .footer-img {
+        width: 15%;
+        padding: 10px 0;
+    }
 }
 
 .copyright {
